@@ -19,7 +19,7 @@ A Chrome extension that lets you easily copy LaTeX math formulas from ChatGPT, C
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/katex-copier.git
+   git clone https://github.com/sai-nallani/katex-copier.git
    ```
 
 2. Open Chrome and navigate to `chrome://extensions`
