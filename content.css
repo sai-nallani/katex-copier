@@ -1,0 +1,76 @@
+/* KaTeX Copier Content Styles */
+
+/* Highlight KaTeX elements on hover */
+.katex-copier-enabled {
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    border-radius: 4px !important;
+}
+
+.katex-copier-enabled:hover {
+    background: rgba(102, 126, 234, 0.15) !important;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+/* Flash effect when copied */
+.katex-copier-copied {
+    background: rgba(76, 175, 80, 0.3) !important;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5) !important;
+}
+
+/* Tooltip */
+.katex-copier-tooltip {
+    position: fixed;
+    padding: 6px 12px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    z-index: 2147483647;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.katex-copier-tooltip.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Notification */
+.katex-copier-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    z-index: 2147483647;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.katex-copier-notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.katex-copier-notification.success {
+    border: 1px solid rgba(76, 175, 80, 0.5);
+    background: linear-gradient(135deg, #1a2e1a 0%, #163e22 100%);
+}
+
+.katex-copier-notification.error {
+    border: 1px solid rgba(244, 67, 54, 0.5);
+    background: linear-gradient(135deg, #2e1a1a 0%, #3e1616 100%);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KaTeX Copier</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>KaTeX Copier</h1>
+      <p class="subtitle">Click on any KaTeX formula to copy it</p>
+    </header>
+    
+    <div class="status-section">
+      <div id="status" class="status">
+        <span class="status-icon">🔍</span>
+        <span id="status-text">Scanning page...</span>
+      </div>
+    </div>
+    
+    <div class="results-section">
+      <div id="count-display" class="count-display">
+        <span id="formula-count">0</span> formulas found
+      </div>
+    </div>
+    
+    <div class="actions">
+      <button id="scan-btn" class="btn btn-primary">
+        <span class="btn-icon">🔄</span>
+        Rescan Page
+      </button>
+      <button id="copy-all-btn" class="btn btn-secondary">
+        <span class="btn-icon">📋</span>
+        Copy All
+      </button>
+    </div>
+    
+    <div id="formulas-list" class="formulas-list"></div>
+    
+    <footer>
+      <p>Hover over formulas on page to highlight • Click to copy</p>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
