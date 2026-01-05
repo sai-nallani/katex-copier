@@ -50,10 +50,7 @@ Works on any website that uses KaTeX for math rendering, including:
 - **ChatGPT** (chat.openai.com)
 - **Claude** (claude.ai)
 - **Google Gemini** (gemini.google.com)
-- **Stack Exchange** sites
-- **Notion**
-- **Obsidian Publish**
-- And many more!
+- And many more! As long as the website uses KaTeX. 
 
 ## How It Works
 
